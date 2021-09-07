@@ -31,6 +31,9 @@ async def huhu_handle(bot: Bot, event: Event, state: T_State):
         return
     else:
         huhu_num = 1 if len(args) == 0 else int(args)
+        if huhu_num == 0:
+            await huhu.send(Message("泥到底要不要看狐狐图嘛！"))
+            return            
 
     try:    
         try:

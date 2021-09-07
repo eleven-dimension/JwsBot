@@ -21,6 +21,9 @@ async def setu_handle(bot: Bot, event: Event, state: T_State):
         return
     else:
         setu_num = 1 if len(args) == 0 else int(args)
+        if setu_num == 0:
+            await setu.send(Message("泥到底要不要看涩图嘛！"))
+            return            
     
     try:
         if setu_num >= 5:

@@ -21,6 +21,9 @@ async def maomao_handle(bot: Bot, event: Event, state: T_State):
         return
     else:
         maomao_num = 1 if len(args) == 0 else int(args)
+        if maomao_num == 0:
+            await maomao.send(Message("泥到底要不要看猫猫图嘛！"))
+            return           
 
     print(maomao_num)
     try:
