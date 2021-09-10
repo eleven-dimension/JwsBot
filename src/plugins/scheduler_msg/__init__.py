@@ -44,11 +44,11 @@ async def force_jws_sleep():
     random.seed(int(time.time()))
     await bot.send_private_msg(user_id=jws_id, message="要是还没睡，等着变成" + random.choice(coax_jws) + "吧你！")
 
-
+'''
 @scheduler.scheduled_job('cron', hour=7, minute=50, id="coax_jws_work")
 async def coax_jws_work():
     bot = get_bot()
     jws_id = 1015872615
 
     await bot.send_private_msg(user_id=jws_id, message="大笨猫快起来上班！￣︿￣")
-
+'''
