@@ -25,7 +25,8 @@ async def coax_jws_sleep():
         "啊\n我得了一种不能睡觉的病毒\n怎么办，亲爱的\n并且这种病毒和你相关联\n"\
         "你要是不睡我也睡不着\n具有很强的传染性\n我妈还没抱上孙子呢\n我一定要活下去\n就让我们一起睡觉吧！\n是你睡我？还是我睡你啊？",
         "十一点还不睡觉是想和我做爱？",
-        "不睡觉在干嘛呢？谈恋爱？超级吃醋醋！"
+        "不睡觉在干嘛呢？谈恋爱？超级吃醋醋！",
+        "猫猫不睡觉是想和主人玩冰恋嘛？"
     ]
     random.seed(int(time.time()))
     await bot.send_private_msg(user_id=jws_id, message=random.choice(coax_jws))
